@@ -20,7 +20,7 @@ public class Program {
 	System.out.print("Enter full file path: ");
 	String path = sc.nextLine();
 	
-	try (BufferedReader br new = BufferedReader(new FileReader(path))) {
+	try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 		List<Product> list = new ArrayList<>();
 		
 		String line = br.readLine();
